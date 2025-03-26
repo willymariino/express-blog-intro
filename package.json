@@ -17,5 +17,8 @@
     "url": "https://github.com/willymariino/express-blog-intro/issues"
   },
   "homepage": "https://github.com/willymariino/express-blog-intro#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }
