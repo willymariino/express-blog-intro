@@ -9,8 +9,15 @@ app.get("/", (req, res) => { // chiamo la funzione tramite metodo get
     res.send("dolci disponibili sul menù") // fornisco una risposta in modo che la risposa non rimanga in sospeso
 })
 
+app.get("/dolci", (req, res) => {
+    console.log("oggetti")
+
+    res.send("descrizione dolci")
+
+})
+
 app.listen(port, () => {
-    console.log("sono un server attivo sulla porta:" + " " + port)
+    console.log("server avviato su http://127.0.0.1:" + " " + port)
 
 
 })
