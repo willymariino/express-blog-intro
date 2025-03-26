@@ -12,7 +12,37 @@ app.get("/", (req, res) => { // chiamo la funzione tramite metodo get
 app.get("/dolci", (req, res) => {
     console.log("oggetti")
 
-    res.send("descrizione dolci")
+    //  res.send("descrizione dolci")
+
+    const menu [
+
+        {
+
+            nome: "ciambellone",
+            immagine: "/images/ciambellone.jpg",
+
+        },
+        {
+            nome: "ciambellone",
+            immagine: "/images/ciambellone.jpg",
+        },
+        {
+            nome: "ciambellone",
+            immagine: "/images/ciambellone.jpg",
+        },
+        {
+            nome: "ciambellone",
+            immagine: "/images/ciambellone.jpg",
+        },
+        {
+            nome: "ciambellone",
+            immagine: "/images/ciambellone.jpg",
+        }
+
+
+    ]
+
+    res.type("json").send(menu)
 
 })
 
