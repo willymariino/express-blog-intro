@@ -5,6 +5,8 @@ const port = 3000 // indico quale porta voglio utilizzare
 // aggiungo una rotta
 app.get("/", (req, res) => { // chiamo la funzione tramite metodo get
     console.log("sto chiamando la rotta principale")
+
+    res.send("dolci disponibili sul menù") // fornisco una risposta in modo che la risposa non rimanga in sospeso
 })
 
 app.listen(port, () => {
