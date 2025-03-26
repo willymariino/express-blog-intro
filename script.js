@@ -14,7 +14,7 @@ app.get("/dolci", (req, res) => {
 
     //  res.send("descrizione dolci")
 
-    const menu [
+    const menu = [
 
         {
 
