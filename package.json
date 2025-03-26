@@ -4,7 +4,7 @@
   "main": "script.js",
   "scripts": {
     "start": "node script.js",
-    "watch": "node --watch script.js"
+    "dev": "node --watch script.js"
   },
   "repository": {
     "type": "git",
