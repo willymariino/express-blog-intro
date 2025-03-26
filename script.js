@@ -2,15 +2,17 @@ const express = require("express") // vado ad importare express
 const app = express() // invoco express
 const port = 3000 // indico quale porta voglio utilizzare
 
+app.use(express.static("public"))
+
 // aggiungo una rotta
 app.get("/", (req, res) => { // chiamo la funzione tramite metodo get
     console.log("sto chiamando la rotta principale")
 
-    res.send("dolci disponibili sul menù") // fornisco una risposta in modo che la risposa non rimanga in sospeso
+    res.send("server del mio blog") // fornisco una risposta in modo che la risposa non rimanga in sospeso
 })
 
-app.get("/dolci", (req, res) => {
-    console.log("oggetti")
+app.get("/bacheca", (req, res) => {
+    console.log("bacheca")
 
     //  res.send("descrizione dolci")
 
@@ -19,24 +21,25 @@ app.get("/dolci", (req, res) => {
         {
 
             nome: "ciambellone",
-            immagine: "/images/ciambellone.jpg",
+            immagine: "/images/ciambellone.jpeg",
 
         },
         {
-            nome: "ciambellone",
-            immagine: "/images/ciambellone.jpg",
+            nome: "cracker",
+            immagine: "/images/cracker_barbabietola.jpeg",
         },
         {
-            nome: "ciambellone",
-            immagine: "/images/ciambellone.jpg",
+            nome: "pane fritto",
+            immagine: "/images/pane_fritto_dolce.jpeg",
         },
         {
-            nome: "ciambellone",
-            immagine: "/images/ciambellone.jpg",
+            nome: "pasta barbabietola",
+            immagine: "/images/pasta_barbabietola.jpeg",
         },
+
         {
-            nome: "ciambellone",
-            immagine: "/images/ciambellone.jpg",
+            nome: "torta paesana",
+            immagine: "/images/torta_paesana.jpeg",
         }
 
 
